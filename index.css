@@ -8,6 +8,24 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  /* border: rebeccapurple 2px solid; */
+  background-color: #ebd4e8;
+}
+
+h1 {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  text-align: center;
+  padding-top: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #wrapper {
@@ -18,14 +36,14 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #e3e3e3;
+  background-color: #ebd4e8;
   z-index: 0;
 }
 
 #chart {
   position: fixed;
-  left: 31.5%;
-  top: 2.5%;
+  left: 36%;
+  top: 20%;
   width: 35%;
   background-color: transparent;
   z-index: 1;

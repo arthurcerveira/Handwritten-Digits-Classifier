@@ -63,8 +63,8 @@ let gridBounding = null;
 
 let createGrid = () => {
   pixelDim = 20;
-  anchorX = canvas.width / 2 - pixelDim * (gridWidth / 2);
-  anchorY = canvas.height / 2 - pixelDim * (gridHeight / 5);
+  anchorX = 20;
+  anchorY = 60;
 
   gridBounding = [
     anchorX,
@@ -85,7 +85,7 @@ let createGrid = () => {
 };
 
 let inBounds = (x, y, target) => {
-  return x > target[0] && x < target[1] && y > target[2] && y < target[3];
+  return x > target[0] && x < target[1] && y > target[2] + 120 && y < target[3] + 120;
 };
 
 window.addEventListener("mousedown", (e) => {
@@ -180,7 +180,7 @@ let model = null;
 async function loadNeuralNet() {
   // link para seu arquivo model.json
   model = await tf.loadLayersModel(
-    "https://qodatecnologia.github.io/tfjs/json/model.json"
+    "https://raw.githubusercontent.com/arthurcerveira/Handwritten-Digits-Classifier/master/models/models.json"
   );
 }
 // Parses our grid into a matrix so we can then convert to a tensor.
